@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "circuitett-instrmix"
+version = "0.1.0"
+description = "统计各指令类型占比并与推荐配比对比，标出偏离项"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "circuitett" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://circuitett.github.io"
+Repository = "https://github.com/circuitett/instrmix"
+Issues = "https://github.com/circuitett/instrmix/issues"
+
+[project.scripts]
+instrmix = "instrmix:main"
+
+[tool.setuptools]
+py-modules = ["instrmix"]
